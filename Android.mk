@@ -197,5 +197,6 @@ LOCAL_STATIC_LIBRARIES := libclearsilverregex libc libcutils libm libuclibcrpc
 LOCAL_MODULE_CLASS := UTILITY_EXECUTABLES
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/utilities
 LOCAL_UNSTRIPPED_PATH := $(PRODUCT_OUT)/symbols/utilities
+LOCAL_PACK_MODULE_RELOCATIONS := false
 $(LOCAL_MODULE): busybox_prepare
 include $(BUILD_EXECUTABLE)
